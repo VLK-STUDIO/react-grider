@@ -32,7 +32,6 @@ export default class Grider extends Component {
             </div>
         )
     }
-
 }
 
 class Item extends Component {
