@@ -7,10 +7,10 @@ export default class App extends Component {
     return (
         <Grider gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
             <Grider.Item 
-                colStart={2} 
-                colEnd={3}
+                colStart={1} 
+                colEnd={1}
                 rowStart={2}
-                rowEnd={3}
+                rowEnd={2}
                 wireframe={true}>
                 Test
             </Grider.Item>
