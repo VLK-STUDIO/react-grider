@@ -5,7 +5,7 @@ import Grider from 'react-grider'
 export default class App extends Component {
   render () {
     return (
-        <Grider cols="25% 50% 25%" rows="50vh 50vh">
+        <Grider gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
             <Grider.Item 
                 colStart={2} 
                 colEnd={3}

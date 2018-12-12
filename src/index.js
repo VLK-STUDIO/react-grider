@@ -10,6 +10,9 @@ export default class Grider extends Component {
         cols: PropTypes.oneOfType([
             PropTypes.string
         ])
+        gap: PropTypes.oneOfType([
+            PropTypes.string
+        ])
     }
 
     render() {
