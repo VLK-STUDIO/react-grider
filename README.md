@@ -1,6 +1,6 @@
 # react-grider
 
-> The css grid react library.
+> React Grider is a css-grid based micro-library.
 
 [![NPM](https://img.shields.io/npm/v/react-grider.svg)](https://www.npmjs.com/package/react-grider) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -20,7 +20,7 @@ import Grider from 'react-grider'
 export default class App extends Component {
   render () {
     return (
-        <Grider cols="25% 50% 25%" rows="50vh 50vh"> //Setup Template
+        <Grider cols="25% 50% 25%" rows="50vh 50vh">
             <Grider.Item 
                 colStart={2}
                 colEnd={3}
@@ -38,4 +38,3 @@ export default class App extends Component {
 ## License
 
 MIT © [VLK-STUDIO](https://github.com/VLK-STUDIO)
-# react-grider
