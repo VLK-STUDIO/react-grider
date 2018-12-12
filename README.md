@@ -15,12 +15,21 @@ npm install --save react-grider
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-grider'
+import Grider from 'react-grider'
 
-class Example extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MyComponent />
+        <Grider cols="25% 50% 25%" rows="50vh 50vh"> //Setup Template
+            <Grider.Item 
+                colStart={2}
+                colEnd={3}
+                rowStart={2} 
+                rowEnd={3}
+                wireframe={false}>
+                Test
+            </Grider.Item>
+        </Grider>
     )
   }
 }
