@@ -1,6 +1,6 @@
 {
   "name": "react-grider",
-  "version": "0.0.4",
+  "version": "0.0.45",
   "description": "The css grid react library.",
   "author": "VLK-STUDIO",
   "license": "MIT",
@@ -10,6 +10,7 @@
   "jsnext:main": "dist/index.es.js",
   "keywords": [
       "css-grid",
+      "react",
       "react-css-grid",
       "css",
       "layout",
