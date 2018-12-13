@@ -6,9 +6,10 @@
 
 ## Install
 
-```bash
+> From 14/12/2018 on NPM
+<!-- ```bash
 npm install --save react-grider
-```
+``` -->
 
 ## Basic Usage
 
@@ -75,7 +76,7 @@ export default class App extends Component {
   }
 }
 ```
-# What's next?
+## What's next?
 
 > I'm working to add a template feature with named areas.
 
