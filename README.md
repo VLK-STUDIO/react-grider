@@ -44,7 +44,7 @@ export default class App extends Component {
 
 ## Define a custom grid
 
-> You can define your own grid by setting the **cols**,**rows**,**gap** and **width** props on the **Grider** component and **colStart**,**colEnd**,**rowStart**,**rowEnd** in the **Grider.Item** component props. I'ts possible to view a wireframe of your items by adding the prop **wireframe** to the **Grider.Item**.
+> You can define your own grid by setting the `cols`,`rows`,`gap` and `width` props on the `Grider` component and `colStart`,`colEnd`,`rowStart`,`rowEnd` in the `Grider.Item` component props. I'ts possible to view a wireframe of your items by adding the prop `wireframe` to the `Grider.Item`.
 
 ```jsx
 import React, { Component } from 'react'
@@ -80,6 +80,26 @@ export default class App extends Component {
   }
 }
 ```
+## Define Item Area using `gridArea`
+
+> It's possible to add custom css class to your items by using the prop `className`
+
+```jsx
+<Grider.Item gridArea="2/2/2/2">
+    Test
+</Grider.Item>
+```
+
+## Custom className
+
+> It's possible to add custom css class to your items by using the prop `className`
+
+```jsx
+<Grider.Item className="customClass">
+    Test
+</Grider.Item>
+```
+
 ## What's next?
 
 > I'm working to add a template feature with named areas.
