@@ -6,10 +6,7 @@
 
 ## Install
 
-> From 14/12/2018 on NPM
-<!-- ```bash
-npm install --save react-grider
-``` -->
+> npm install --save react-grider
 
 ## Basic Usage
 
