@@ -54,11 +54,15 @@ import Grider from 'react-grider'
 export default class App extends Component {
   render () {
     return (
+<<<<<<< HEAD
         <Grider 
             width="100%"
             gap="10px" 
             cols="25% 50% 25%" 
             rows="50vh 50vh">
+=======
+        <Grider width="100%" gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
+>>>>>>> 9a7e2c657d8945a624843181bf3a32e1501aa592
             <Grider.Item 
                 colStart={1}
                 colEnd={1}
