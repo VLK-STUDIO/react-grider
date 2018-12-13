@@ -44,7 +44,7 @@ export default class App extends Component {
 
 ## Define a custom grid
 
-> You can define your own grid by setting the **cols** and  the **rows** props on the **Grider** component and **colStart**,**colEnd**,**rowStart**,**rowEnd** in the **Grider.Item** component props. I'ts possible to view a wireframe of your items by adding the prop **wireframe** to the **Grider.Item**.
+> You can define your own grid by setting the **cols**,**rows**,**gap** and **width** props on the **Grider** component and **colStart**,**colEnd**,**rowStart**,**rowEnd** in the **Grider.Item** component props. I'ts possible to view a wireframe of your items by adding the prop **wireframe** to the **Grider.Item**.
 
 ```jsx
 import React, { Component } from 'react'
@@ -54,7 +54,11 @@ import Grider from 'react-grider'
 export default class App extends Component {
   render () {
     return (
-        <Grider gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
+        <Grider 
+            width="100%"
+            gap="10px" 
+            cols="25% 50% 25%" 
+            rows="50vh 50vh">
             <Grider.Item 
                 colStart={1}
                 colEnd={1}
