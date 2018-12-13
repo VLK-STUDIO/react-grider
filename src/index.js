@@ -17,7 +17,7 @@ export default class Grider extends Component {
 
     render() {
         const rows = typeof this.props.rows !== 'undefined' ? 
-            this.props.rows : '100px 100px 100px 100px';
+            this.props.rows : 'auto';
         const cols = typeof this.props.cols !== 'undefined' ? 
             this.props.cols : '25% 25% 25% 25%';
         const gap = typeof this.props.gap !== 'undefined' ? this.props.gap : 0;
