@@ -109,7 +109,7 @@ export default class App extends Component {
 
 ## Define Item Area using `gridArea`
 
-> It's possible to add custom css class to your items by using the prop `className`
+> It's possible to define an item area by the `gridArea` prop
 
 ```jsx
 <Grider.Item gridArea="2/2/2/2" wireframe>
