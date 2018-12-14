@@ -14,19 +14,32 @@ export default class App extends Component {
             width: "70%"
         }}>
             <Grider 
-            height="auto" 
-            width="100%" 
-            cols="25% 50% 25%" 
-            rows="250px 200px">
-                <Grider.Item 
-                    colStart={1}
-                    colEnd={1}
-                    rowStart={2} 
-                    rowEnd={2}
-                    wireframe>
-                    Test
+                gap="10px"
+                height="300px" 
+                width="100%" 
+                cols={4} 
+                rows={4}>
+                <Grider.Item wireframe>
+                    Item 1
                 </Grider.Item>
-                
+                <Grider.Item wireframe>
+                    Item 2
+                </Grider.Item>
+                <Grider.Item wireframe>
+                    Item 3
+                </Grider.Item>
+                <Grider.Item wireframe>
+                    Item 4
+                </Grider.Item>
+                <Grider.Item wireframe>
+                    Item 5
+                </Grider.Item>
+                <Grider.Item 
+                    colStart={2} 
+                    colEnd={5} 
+                    wireframe>
+                    Item 6
+                </Grider.Item>
             </Grider>
         </div>
     )
