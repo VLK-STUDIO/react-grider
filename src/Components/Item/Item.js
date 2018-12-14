@@ -32,7 +32,6 @@ export default class Item extends Component {
         const { colEnd } = this.props;
         const { rowStart } = this.props;
         const { rowEnd } = this.props;
-        const gridArea = typeof this.props.gridArea !== 'undefined' ? this.props.gridArea : null;
         const { wireframe } = this.props;
         const { className } = this.props;
         const style = {
@@ -40,7 +39,6 @@ export default class Item extends Component {
             gridColumnEnd : colEnd,
             gridRowStart : rowStart,
             gridRowEnd : rowEnd,
-            gridArea: gridArea,
             border : wireframe ? "1px solid green" : "none",
         }
         return(

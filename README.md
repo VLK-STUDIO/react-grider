@@ -55,22 +55,30 @@ export default class App extends Component {
             width="100%" 
             gap="10px" 
             cols="25% 50% 25%" 
-            rows="50vh 50vh">
+            rows="200px 200px">
             <Grider.Item 
                 colStart={1}
                 colEnd={1}
                 rowStart={1} 
                 rowEnd={4}
-                wireframe={false}>
-                Test
+                wireframe>
+                    Test
             </Grider.Item>
             <Grider.Item 
                 colStart={2}
                 colEnd={4}
                 rowStart={1} 
                 rowEnd={4}
-                wireframe={false}>
-                Test
+                wireframe>
+                    Test
+            </Grider.Item>
+            <Grider.Item 
+                colStart={3}
+                colEnd={4}
+                rowStart={1} 
+                rowEnd={4}
+                wireframe>
+                    Test
             </Grider.Item>
         </Grider>
     )
@@ -105,16 +113,6 @@ export default class App extends Component {
     )
   }
 }
-```
-
-## Define Item Area using `gridArea`
-
-> It's possible to define an item area by the `gridArea` prop
-
-```jsx
-<Grider.Item gridArea="2/2/2/2" wireframe>
-    Test
-</Grider.Item>
 ```
 
 ## Custom className
