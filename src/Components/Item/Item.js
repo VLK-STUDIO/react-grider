@@ -40,6 +40,7 @@ export default class Item extends Component {
             gridColumnEnd : colEnd,
             gridRowStart : rowStart,
             gridRowEnd : rowEnd,
+            gridArea: gridArea,
             border : wireframe ? "1px solid green" : "none",
         }
         return(
