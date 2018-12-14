@@ -19,8 +19,8 @@ export default class Item extends Component {
         gridArea: PropTypes.oneOfType([
             PropTypes.string
         ]),
-        wirefrane: PropTypes.oneOfType([
-            PropTypes.boolean
+        wireframe: PropTypes.oneOfType([
+            PropTypes.bool
         ]),
         className: PropTypes.oneOfType([
             PropTypes.string

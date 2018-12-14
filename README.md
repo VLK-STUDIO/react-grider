@@ -40,7 +40,7 @@ export default class App extends Component {
 
 ## Define a custom grid
 
-> You can define your own grid by setting the `cols`,`rows`,`gap` and `width` props on the `Grider` component and `colStart`,`colEnd`,`rowStart`,`rowEnd` in the `Grider.Item` component props. I'ts possible to view a wireframe of your items by adding the prop `wireframe` to the `Grider.Item`.
+> You can define your own grid by setting the `cols`,`rows`,`gap`,`height` and `width` props on the `Grider` component and `colStart`,`colEnd`,`rowStart`,`rowEnd` in the `Grider.Item` component props. I'ts possible to view a wireframe of your items by adding the prop `wireframe` to the `Grider.Item`.
 
 ```jsx
 import React, { Component } from 'react'
@@ -50,7 +50,7 @@ import Grider from 'react-grider'
 export default class App extends Component {
   render () {
     return (
-        <Grider width="100%" gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
+        <Grider height="auto" width="100%" gap="10px" cols="25% 50% 25%" rows="50vh 50vh">
             <Grider.Item 
                 colStart={1}
                 colEnd={1}
@@ -72,12 +72,42 @@ export default class App extends Component {
   }
 }
 ```
+
+> `cols` and `rows` could be an **integer** also. If you use an **integer** to define them, the grid will be divided in `n` equal columns and rows in relation to the sizes of the the `Grider` component's.
+
+```jsx
+import React, { Component } from 'react'
+
+import Grider from 'react-grider'
+
+export default class App extends Component {
+  render () {
+    return (
+        <Grider width="100%" height="100vh" cols={2} rows={2}>
+            <Grider.Item wireframe>
+                Test
+            </Grider.Item>
+            <Grider.Item wireframe>
+                Test
+            </Grider.Item>
+            <Grider.Item wireframe>
+                Test
+            </Grider.Item>
+            <Grider.Item wireframe>
+                Test
+            </Grider.Item>
+        </Grider>
+    )
+  }
+}
+```
+
 ## Define Item Area using `gridArea`
 
 > It's possible to add custom css class to your items by using the prop `className`
 
 ```jsx
-<Grider.Item gridArea="2/2/2/2">
+<Grider.Item gridArea="2/2/2/2" wireframe>
     Test
 </Grider.Item>
 ```
@@ -87,7 +117,7 @@ export default class App extends Component {
 > It's possible to add custom css class to your items by using the prop `className`
 
 ```jsx
-<Grider.Item className="customClass">
+<Grider.Item className="customClass" wireframe>
     Test
 </Grider.Item>
 ```
